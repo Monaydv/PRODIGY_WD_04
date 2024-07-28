@@ -22,7 +22,7 @@ export default function Pbox({ name, description, images, pending, link, git }) 
     }
 
     const getimage = (item) => {
-        return require(`../photos/${item}.png`)
+        return require(`../photos/${item}.jpg`)
     }
     return (
         <>
@@ -40,9 +40,9 @@ export default function Pbox({ name, description, images, pending, link, git }) 
                         })}
                     </Carousel>
                     <div className={classname}>
-                        <h3 className='text-center mt-sm-3 mt-2 mb-0 p-0'>{name} <span className={pending ? "d-inline fs-4" : "d-none"}>(progress)</span> <Link onClick={() => Navigate({ link })}><LaunchIcon className={pending ? "d-none" : ' mb-2'} sx={{ fontSize: 30 }} /></Link> </h3>
+                        <h3 className='text-center mt-sm-3 mt-2 mb-0 p-0'>{name} <span className={pending ? "d-inline fs-4" : "d-none"}>(progress)</span></h3>
                         <p className='text-center mt-0 px-2 pt-0 mb-0'>{description}</p>
-                        <h6 className='mt-3 ms-auto me-3'>Full code at <Link to={`https://github.com/UvYadav04/${name}`}>github</Link></h6>
+                        <h6 className='mt-3 ms-auto me-3'>Full code at <Link to={`https://github.com/Monaydv/${git}`}>github</Link></h6>
                     </div>
                 </div >
 

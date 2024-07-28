@@ -30,10 +30,21 @@ const data = [
         height: 40
     },
     {
-        name: "reactJS",
+        name: "Python",
         background: "skyblue",
         height: 60
+    },
+    {
+        name: "C",
+        background: "skyblue",
+        height: 90
+    },
+    {
+        name: "C++",
+        background: "skyblue",
+        height: 80
     }
+
 ]
 
 

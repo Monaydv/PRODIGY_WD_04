@@ -6,7 +6,7 @@ app.use(express.json())
 app.use(express.static('public'))
 
 app.use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', 'https://dineshyadav.onrender.com');
+    res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
     res.setHeader('Access-Control-Allow-Headers', 'Origin,Accept,X-Requested-With, Content-Type,authorisation');
     res.setHeader('Access-Control-Allow-Credentials', true);
@@ -28,7 +28,7 @@ app.post('/message', (req, res) => {
 
     var mailOptions = {
         from: 'uvyadav2230@gmail.com',
-        to: "dineshnirban01@gmail.com",
+        to: "monaydv04@gmail.com",
         subject: 'New message from client',
         text: `${data.name} with email ${data.email} and mobile ${data.mobile} sent you a message \n${data.message}`
     };

@@ -30,7 +30,7 @@ export default function Navbar() {
             <div className="row navrow text-white m-0 align-items-center justify-content-md-around justify-content-between ">
                 <div className="col-auto p-0 m-0 mx-md-0 ms-5">
                     {/* <img src={logo} className="p-0 m-0" alt="" /> */}
-                    <h1 className='my-auto logo'>dineshyadav</h1>
+                    <h1 className='my-auto logo'>monayadav</h1>
                 </div>
                 <div className="col-lg-7 col-sm-9 bg m-0 d-sm-inline d-none ">
                     <ul className='d-flex  flex-row    justify-content-between align-items-center p-0 m-0 '>
